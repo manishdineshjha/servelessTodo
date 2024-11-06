@@ -24,9 +24,7 @@ const LoginPage = () => {
   useEffect(() => {
     if (localStorage.getItem("username")) {
       localStorage.removeItem("username");
-    } else {
-      router.push("/todos");
-    }
+    } 
   }, []);
 
   return (
